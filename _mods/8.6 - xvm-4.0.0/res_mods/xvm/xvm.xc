@@ -12,4 +12,5 @@
  */
 //${"configs/xvm.xc":"."}
 //${"configs/omc/xvm.xc":"."}
-${"configs/furs/xvm.xc":"."}
+//${"configs/furs/xvm.xc":"."}
+${"configs/@Default/@xvm.xc":"."}
