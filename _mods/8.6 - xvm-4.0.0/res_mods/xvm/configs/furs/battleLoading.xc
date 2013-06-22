@@ -3,10 +3,15 @@
  */
 {
   "battleLoading": {
-    "formatLeft": "<font face='Inconsolata' size='12'>{{vehicle}}</font><font face='Inconsolata' size='12' align='left'><font color='{{c:kb}}'>{{kb:3}}</font> <font face='Inconsolata' size='12' color='{{c:eff}}'> {{eff}} </font>| <font face='Inconsolata' size='12' color='{{c:wn}}'>{{wn}}</font> <font face='Inconsolata' size='12' color='{{c:rating}}'>{{rating}}</font></font>", 
+	"formatLeft": "<font color='{{c:t-rating}}'>{{vehicle}}</font> <font color='{{c:kb}}'> {{kb:3}}</font><font color='{{c:t-battles}}' size='10'> {{t-kb}}</font> <font color='{{c:xwn}}'> {{xwn}}</font> <font color='{{c:rating}}'> {{rating}}</font><font color='{{c:t-rating}}' size='10'> {{t-rating}}</font>",
+	// Display format for the right Players Panel (macros allowed, see readme-en.txt)
+    "formatRight": "<font color='{{c:rating}}'>{{rating}}</font><font color='{{c:t-rating}}' size='10'> {{t-rating}}</font><font color='{{c:xwn}}'> {{xwn}}</font><font color='{{c:kb}}'> {{kb:3}}</font><font color='{{c:t-battles}}' size='10'> {{t-kb}}</font> <font color='{{c:t-rating}}'> {{vehicle}}</font>",
+
+  
+    //"formatLeft": "<font face='Inconsolata' size='12'>{{vehicle}}</font><font face='Inconsolata' size='12' align='left'><font color='{{c:kb}}'>{{kb:3}}</font> <font face='Inconsolata' size='12' color='{{c:eff}}'> {{eff}} </font>| <font face='Inconsolata' size='12' color='{{c:wn}}'>{{wn}}</font> <font face='Inconsolata' size='12' color='{{c:rating}}'>{{rating}}</font></font>", 
 	//"{{vehicle}}<font align='left'><font face='Inconsolata' size='13' color='{{c:kb}}'>{{kb}}</font> <font face='Inconsolata' size='13' color='{{c:wn}}'>{{wn}}</font> <font face='Inconsolata' size='13' color='{{c:rating}}'>{{rating}}</font> | <font face='Inconsolata' size='13' color='{{c:t-battles}}'>{{t-battles:4}}</font> <font face='Inconsolata' size='13' color='{{c:t-rating}}'>{{t-rating:3}}</font></font>",
 																							// Display format for the left Players Panel (macros allowed, see readme-en.txt).
-	"formatRight": "<font face='Inconsolata' size='12' color='{{c:rating}}'>{{rating}}</font> <font face='Inconsolata' size='12' color='{{c:eff}}'> {{eff}} </font> | <font face='Inconsolata' size='12' color='{{c:wn}}'>{{wn}}</font><font face='Inconsolata' size='12' color='{{c:kb}}'>{{kb:3}}</font><font face='Inconsolata' size='12'>{{vehicle}}</font>", // 
+	//"formatRight": "<font face='Inconsolata' size='12' color='{{c:rating}}'>{{rating}}</font> <font face='Inconsolata' size='12' color='{{c:eff}}'> {{eff}} </font> | <font face='Inconsolata' size='12' color='{{c:wn}}'>{{wn}}</font><font face='Inconsolata' size='12' color='{{c:kb}}'>{{kb:3}}</font><font face='Inconsolata' size='12'>{{vehicle}}</font>", // 
 	//"<font align='right'><font face='Inconsolata' size='13' color='{{c:t-battles}}'>{{t-battles:4}}</font> <font face='Inconsolata' size='13' color='{{c:t-rating}}'>{{t-rating:3}}</font> | <font face='Inconsolata' size='13' color='{{c:rating}}'>{{rating}}</font> <font face='Inconsolata' size='13' color='{{c:wn}}'>{{wn}}</font> <font face='Inconsolata' size='13' color='{{c:kb}}'>{{kb}}</font></font>",
 																							// Display format for the right Players Panel (macros allowed, see readme-en.txt).
 	"showChances": true,																	// Show experimental "chance to win" formula.
