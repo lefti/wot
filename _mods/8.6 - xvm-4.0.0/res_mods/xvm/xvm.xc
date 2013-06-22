@@ -11,4 +11,5 @@
  * // - закомментировать строку (использоваться не будет)
  */
 //${"configs/xvm.xc":"."}
-${"configs/omc/xvm.xc":"."}
+//${"configs/omc/xvm.xc":"."}
+${"configs/furs/xvm.xc":"."}
