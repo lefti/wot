@@ -2,23 +2,24 @@
 <noscroll.xml>
 
     <!--
-    "True" - переключение режимов скроллом отключено
+    "True" - No scrolling into sniper mode
 
-    "False" - переключение режимов скроллом включено (равносильно отсутствию мода)
+    "False" - scrolling into sniper mode possible
+	If the file noscroll.xml is missing this equals to false
 
-    если данный файл(gui/noscroll.xml) отсутствует - равносильно "<noscroll>False</noscroll>"
     -->
 
-    <noscroll>True</noscroll>
+    <noscroll>False</noscroll>
 
     <!--
-    "True" - при включении снайперского режима устаналивается кратность зума
-    указанная первым значением <zooms></zooms>
-    в gui/avatar_input_handler.xml или при использовании zoomX4-мода в gui/zoomX4.xml
+	Zoom modification
+	
+    "True" - if this value is set zoom values are taken from 
+			 gui/avatar_input_handler.xml, if zoomX4-mod is installed from gui/zoomX4.xml
 
-    "False" - отключает модификацию
+    "False" - zoom modification disabled
 
-    если данный файл(gui/noscroll.xml) отсутствует - равносильно "<defzoom>False</defzoom>"
+	if noscroll.xml is missing this defaults to False
     -->
 
     <defzoom>True</defzoom>
