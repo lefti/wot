@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<zoomX4.xml>
-    <zoomX4>false</zoomX4> <!-- Four stage zoom for sniper mode. "true" = enable, "false" = disable -->
-    <zooms>2 4 8 16</zooms> <!-- any total value to change each stage (default 2 4 8 10) -->
-</zoomX4.xml>

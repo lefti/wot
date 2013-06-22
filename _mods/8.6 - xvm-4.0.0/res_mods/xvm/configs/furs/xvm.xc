@@ -9,10 +9,10 @@
 	"configVersion": "4.0.0",												// Version of the config. Do not remove or change it unnecessarily.
 	"editorVersion": "0.50",												// Version of the editor.
 	"definition": {															// Common config options. All settings information in the mod not being used.
-		"author": "Grumpelumpf",											// Config author.
-		"description": "OMC ModPack 19-06-2013",							// Config description.
-		"url": "http://www.odem-mortis.net/index.php?site=files&file=98",	// Address to config updates.
-		"date": "19.06.2013",												// Config last modified.
+		"author": "furs",											// Config author.
+		"description": "XVM Config by furs QSF-X, based on odem-mortis XVM Config",							// Config description.
+		"url": "quickybaby.com",	// Address to config updates.
+		"date": "22.06.2013",												// Config last modified.
 		"gameVersion": "0.8.6",												// Supported version of the game.
 		"modMinVersion": "4.0.0"											// The minimum required version of the XVM mod.
 	},

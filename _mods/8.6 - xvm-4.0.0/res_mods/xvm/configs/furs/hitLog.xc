@@ -9,7 +9,7 @@
 		"deadMarker": "<font face='Wingdings'>N</font>",	// Substitution for {{dead}} macro when tank is dead.
 		"blowupMarker": "<font face='Wingdings'>M</font>",
 															// Default header format (before first hit). Macros IS NOT allowed.
-		"defaultHeader":"<textformat leading='-5'>          <img src='img://../xvm/res/icons/mark/omc.png' width='72' height='36'>\n<font color='#FFFFFF'>\u0077\u0077\u0077\u002E\u006F\u0064\u0065\u006D\u002D\u006D\u006F\u0072\u0074\u0069\u0073\u002E\u006E\u0065\u0074</font></textformat>",
+		"defaultHeader":"QSF-X Hit Log",
 															// Hits header format, including last hit (macros allowed, see readme-en.txt).
 		"formatHeader": "<font color='#FFFFFF'>\nDamage dealt:</font> <font color='#fd0000'>{{dmg-total}} hp</font>  <font color='#FFFFFF'>last Damage:</font> <font color='{{c:dmg-kind}}'>{{dmg}} hp {{dead}}</font><font color='{{c:vtype}}'>({{vehicle}})</font>   <font color='#FFFFFF'>ø</font> <font color='#FFFFFF'>{{dmg-avg}} hp</font>",
 															// List of hits format (macros allowed, see readme-en.txt).

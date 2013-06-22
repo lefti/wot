@@ -10,7 +10,7 @@
 		"minimapZoom": {
 			"enabled": true,
 			"onHold": true,
-			"keyCode": 17
+			"keyCode": 81
 		},
 		"minimapExtended": {
 			"enabled": true,
@@ -18,8 +18,8 @@
 			"keycode": 20
 		},
 		"messages": [
-			{ "enabled": true, "keycode": 113, "text": "ШАНСЫ 5% АЙДА ТАПИЦА" }, // F2
-			{ "enabled": true, "keycode": 114, "text": "☆\nhey!\n☆" } // .split("\n")
+			//{ "enabled": true, "keycode": 113, "text": "ШАНСЫ 5% АЙДА ТАПИЦА" }, // F2
+			//{ "enabled": true, "keycode": 114, "text": "☆\nhey!\n☆" } // .split("\n")
 		]
 	}
 }
