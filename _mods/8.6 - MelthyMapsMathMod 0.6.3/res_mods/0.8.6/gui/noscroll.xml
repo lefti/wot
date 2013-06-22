@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<noscroll.xml>
+    <noscroll>false</noscroll> <!-- "true" = sniper mode activated with SHIFT key, "false" = sniper mode activated with mouse wheel scroll -->
+    <defzoom>false</defzoom> <!-- "true" = zoom stage starts from x2, "false" = remember last zoom stage used -->
+</noscroll.xml>
