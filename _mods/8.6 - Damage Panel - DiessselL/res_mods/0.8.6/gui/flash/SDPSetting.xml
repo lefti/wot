@@ -4,125 +4,114 @@
 	<!-- Authors: Shtys, STL1te, DiessselL -->
 	<!-- Modification: furs -->	
 
-	<!-- Список возможных макросов:
-	{{n}} - переход на новую строку
-	{{hp}} - текущее ХП
-	{{hp-max}} - максимальное ХП
-	{{hp-ratio}} - процент оставшегося ХП
-	{{dmg}} - общий урон, который нанесли танку
-	{{dmg-ratio}} - общий урон, который нанесли танку в процентах
-	{{count}} - порядковый номер нанесенного урона танку
-	{{dmg-one}} - урон, который нанесли танку одним попаданием
-	{{dmg-ratio-one}} - урон, который нанесли танку одним попаданием в процентах
-	{{time-rel}} - время с момента первого попадания по танку
-	{{time-abs}} - время попадания по игровому таймеру боя
-	{{speed}} - скорость движения танка
-	{{player}} - ник игрока
-	{{vehicle}} - название танка
-	{{repair-100}} - таймер ремонта модулей с округлением до сотых
-	{{repair-10}} - таймер ремонта модулей с округлением до десятых
-	{{repair}} - таймер ремонта модулей с округлением до целых в большую сторону -->
+	<!-- Available variables:
+	{{n}} - newline
+	{{hp}} - current HP
+	{{hp-max}} - max. HP
+	{{hp-ratio}} - HP ratio
+	{{dmg}} - total dmg caused by the tank
+	{{dmg-ratio}} - total dmg percentage
+	{{count}} - number of hits
+	{{dmg-one}} - one hit damage
+	{{dmg-ratio-one}} - one hit damage, percentage
+	{{time-rel}} - Time elapsed from the hit
+	{{time-abs}} - Game time of the hit
+	{{speed}} - guess what?!
+	{{player}} - this one's even trickier
+	{{vehicle}} - what could that mean?
+	{{repair-100}} - repair timer, two decimal places
+	{{repair-10}} - repair timer, one decimal place
+	{{repair}} - repair timer, rounded up -->
 	
-	<!-- Настройка элементов боевого интерфейса -->
+	<!-- Combat interface settings -->
 	<battle>
-	
-		<!-- Настройка панели повреждений -->
+			<!-- Damage panel settings -->
 		<damagePanel>
-			<location x="0" y="230" center="false"/> <!-- x, y - координаты расположения панели. Отсчет координат идет от левого нижнего угла экрана. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->			
+			<location x="0" y="230" center="false"/>
 		</damagePanel>
-		
-		<!-- Настройка панели снарядов -->
+		<!-- Consumables settings -->
 		<consumablesPanel>
-			<location x="0" y="80" center="true"/> <!-- x, y - координаты расположения панели. Отсчет координат идет от левого нижнего угла экрана. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
+			<location x="0" y="80" center="true"/>
 		</consumablesPanel>
 		
-		<!-- Настройка панели сообщения о выведенных из строя модулях и контуженного экипажа -->
+		<!-- Reports of crew and module damage  -->
 		<vehicleMessagesPanel>
-			<location x="-250" y="130" center="true"/> <!-- x, y - координаты расположения панели. Отсчет координат идет от левого нижнего угла экрана. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
+			<location x="-250" y="130" center="true"/>
 		</vehicleMessagesPanel>
 		
-		<!-- Настройка боевого чата -->
+		<!-- Combat chat -->
 		<messenger>
-			<location x="0" y="622" center="false"/> <!-- x, y - координаты расположения панели. Отсчет координат идет от левого нижнего угла экрана. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
+			<location x="0" y="622" center="false"/>
 		</messenger>
 		
 	</battle>
 	
 	
 	<background alpha="0"> 
-		<location x="0" y="0" center="false"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<scale x="100" y="100"/> <!-- x, y - масштаб элемента в процентах. 100 - оригинальный размер -->
+		<location x="0" y="0" center="false"/>
+		<scale x="90" y="90"/> <!-- 100 - original size -->
 	</background>
 	
-	<!-- Display tank settings -->
+	<!-- Tank model settings -->
 	<tankIndicator>
 		<tank alpha="100"> 
-		<location x="115" y="100" center="false"/> 
-		<!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="0" strength="200"/> 
-		<!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<scale x="75" y="75"/> <!-- x, y - масштаб элемента в процентах. 100 - оригинальный размер -->
+			<location x="115" y="100" center="false"/> 
+			<filter size="3" angle="0" distance="0" color="0x000000" alpha="0" strength="200"/><!-- shadow -->
+			<!-- 100 - original size -->
+			<scale x="75" y="75"/>
 		</tank>
-		<!-- Настройка орудия индикатора танка -->
-		<gun alpha="100"/> <!-- alpha - прозрачность. 100 - непрозрачно, 0 - прозрачно -->
-		<!-- Настройка башни индикатора танка -->
-		<turret alpha="100"/> <!-- alpha - прозрачность. 100 - непрозрачно, 0 - прозрачно -->
-		
-		<!-- Настройка корпуса индикатора танка -->
-		<hull alpha="100"/> <!-- alpha - прозрачность. 100 - непрозрачно, 0 - прозрачно -->
-		
-		<!-- Настройка Углов Горизонтальной Наводки индикатора танка -->
-		<gunConstraints alpha="100"> <!-- alpha - прозрачность. 100 - непрозрачно, 0 - прозрачно -->
-			<color normal="0x999999" critical="0xFF0000"/> <!-- normal - цвет нормального УГН. critical - цвет граничного УГН -->
+		<gun alpha="80"/> <!-- 100 - full opacity -->
+		<turret alpha="80"/>
+		<hull alpha="80"/>
+		<!-- Gun damage indicator -->
+		<gunConstraints alpha="100">
+			<color normal="0x999999" critical="0xFF0000"/>
 		</gunConstraints>
-	
 	</tankIndicator>
 	
-	<!-- Настройка экипажа -->
-	<crew alpha="90"> <!-- alpha - прозрачность не контуженного экипажа. 100 - непрозрачно, 0 - прозрачно -->
-		<location x="230" y="202"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. Для расположения экипажа в центре, нужно указывать х - равный ширине изображения экрана -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="0" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<color normal="0x999999" critical="0xFF6600"/> <!-- normal - цвет нормального экипажа. critical - цвет контуженного экипажа -->
-		<scale x="100" y="100"/> <!-- x, y - масштаб элемента в процентах. 100 - оригинальный размер -->
+	<crew alpha="90">
+		<location x="230" y="202"/>
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="0" strength="200"/>	<!-- shadow -->
+		<color normal="0x999999" critical="0xFF6600"/>
+		<scale x="90" y="90"/>
 	</crew>
 	
-	<!-- Настройка иконки фиксации корпуса -->
+	<!-- Hull lock icon settings -->
 	<lockIcon> 
-		<location x="100" y="165" center="false"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<filter size="3" angle="0" distance="0" color="0xFF0000" alpha="100" strength="80"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<scale x="100" y="100"/> <!-- x, y - масштаб элемента в процентах. 100 - оригинальный размер -->
-		<color color="0xFF0000"/> <!-- color - цвет иконки -->
+		<location x="100" y="165" center="false"/>
+		<filter size="3" angle="0" distance="0" color="0xFF0000" alpha="90" strength="80"/>
+		<scale x="100" y="100"/>
+		<color color="0xFF0000"/>
 	</lockIcon>
 	
-	<!-- Настройка круиз-контроля -->
-	<cruiseCtrl alpha="100"> <!-- alpha - прозрачность. 100 - непрозрачно, 0 - прозрачно -->
-		<location x="174" y="220" center="false"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<scale x="100" y="100"/> <!-- x, y - масштаб элемента в процентах. 100 - оригинальный размер -->
+	<!-- Cruise control indicator -->
+	<cruiseCtrl alpha="9">
+		<location x="174" y="220" center="false"/>
+		<scale x="100" y="100"/>
 	</cruiseCtrl>
 	
-	<!-- Настройка полоски ХП -->
-	<healthBar alpha="100"> <!-- alpha - прозрачность. 100 - непрозрачно, 0 - прозрачно -->
-		<location x="-230" y="205" center="true"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<scale x="200" y="100"/> <!-- x, y - масштаб элемента в процентах. 100 - оригинальный размер -->
-		<color start="0xFD0100" middle="0xFF6700" end="0x009000"/> <!-- start - цвет полоски когда ХП = 0%. middle - цвет полоски когда ХП = 50%. end - цвет полоски когда ХП = 100%. middle можно убрать, тогда цвет полоски при ХП = 50% посчитается автоматически -->
+	<healthBar alpha="100">
+		<location x="-230" y="205" center="true"/>
+		<scale x="200" y="100"/>
+		<!-- healthbar colors -->
+		<color start="0xFD0100" middle="0xFF6700" end="0x009000"/>
 	</healthBar>
 	
-	<!-- Настройка ХП -->
-	<healthField visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="-115" y="205" center="true"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<text font="Cuprum" size="14" color="0xFFFFFF" alpha="100" align="center" bold="false" leading="0" width="230" height="25"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<format>{{hp}} / {{hp-max}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
+	<!-- Health bar text -->
+	<healthField visible="true">
+		<location x="-115" y="205" center="true"/>
+		<text font="Cuprum" size="14" color="0xFFFFFF" alpha="100" align="center" bold="false" leading="0" width="230" height="25"/>
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/>
+		<format>{{hp}} / {{hp-max}}</format>
 	</healthField>		
 	
-	<!-- Настройка журнала полученного урона -->
-	<damageLog visible="true"> <!-- visible - видимость элемента, true/false - включено/выключено -->
-		<location x="235" y="3" center="false"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
-		<text font="Cuprum" size="15" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="5" width="350" height="226"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля --> 
-		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/> <!-- size - размер тени. angle - угол тени. distance - расстояние смещения тени. color - цвет тени. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). strength - степень нанесения тени в процентах -->
-		<color fire="0xFF0000"/> <!-- fire - цвет строки в журнале с уроном от последнего пожара -->
-		<format>{{count}}:	-{{dmg-one}}</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
-		<direction>down</direction> <!-- Направление записи в журнал. up - последний урон всегда вверху, down - последний урон всегда внизу -->
+	<damageLog visible="true">
+		<location x="235" y="3" center="false"/>
+		<text font="Cuprum" size="13" color="0xFFFFFF" alpha="100" align="left" bold="false" leading="5" width="350" height="226"/>
+		<filter size="3" angle="0" distance="0" color="0x000000" alpha="100" strength="200"/>
+		<color fire="0xFF0000"/>
+		<format>{{count}}:	-{{dmg-one}}</format>
+		<direction>down</direction> <!-- up - new one above old, down - new one below old -->
 	</damageLog>	
 	
 	<!-- Настройка всплывающего сообщения о последнем полученном уроне -->
@@ -134,7 +123,7 @@
 		<delay>5</delay> <!-- Время, после которого сообщение исчезнет -->
 	</damageHit>
 	
-	<!-- Настройка сообщения о пожаре -->
+	<!-- Fire message -->
 	<fireMessage enabled="true"> <!-- enabled - видимость элемента, true/false - включено/выключено -->
 		<location x="0" y="-50" center="true"/> <!-- x, y - координаты расположения элемента. Отсчет координат идет от верхнего левого угла панели. center - включение отсчета x координаты от центра экрана, true/false - включено/выключено -->
 		<text font="Cuprum" size="50" color="0xFF0000" alpha="100" align="center" bold="false" leading="0" width="500" height="70"/> <!-- font - шрифт. size - размер шрифта. color - цвет шрифта. alpha - прозрачность тени(100 - непрозрачно, 0 - прозрачно). align - выравнивание текста, left/right/center - лево/право/центр. bold - жирный тест, true/false - включено/выключено. leading - межстрочный интервал. width, height - ширина и высота поля -->  
@@ -142,8 +131,8 @@
 		<format>Танк горит!</format> <!-- Как будет выглядеть строка в игре. Формируется она из макросов и(или) любых символов. Список макросов перечислен в начале конфига -->
 	</fireMessage>
 	
-	<!-- Настройка иконки пожара -->
-	<fireIcon animation="true"> <!-- animation - переключатель иконки пожара, true/false - анимация пожара/статичная иконка. Если при пожаре проседает ФПС, включить статичную иконку -->
+	<!-- Fire Icon -->
+	<fireIcon animation="true">
 		
 		<!-- Настройка анимированной иконки пожара -->
 		<animated> <!-- animation - переключатель иконки пожара, true/false - анимация пожара/статичная иконка. Если при пожаре проседает ФПС, включить статичную иконку -->
