@@ -1,0 +1,19 @@
+v1.2 - 25-04-2013
+ - Fixed problem loading more than 6 commands.
+ - You can edit more than 6 commands per menu.
+ - Show coordinates of the map.
+ - You can directly open any XML file and it displays which file is open.
+ - Fixed problem displaying the symbol &.
+ - Buttons copy and paste. You can copy and paste a command between different files!.
+ - Enhanced Hotkeys Menu List. (Changed Listbox for ListView).
+ - You can select the mouse buttons for hotkeys.
+ - It works with version 2.3.1 of the 'Enhanced customizeable Radial Menu (8.5)' MOD.
+ - Various fixes. (t71-> T71, bugs, ...)
+ 
+v1.1 - 19-04-2013
+ - Great adaptation to version 2.3 of the 'Enhanced customizeable Radial Menu' MOD.
+ - Correction of errors.
+
+v1.0 - 27-02-2013
+ - Initial version.
+
