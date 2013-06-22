@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<noscroll.xml>
+
+    <!--
+    "True" - переключение режимов скроллом отключено
+
+    "False" - переключение режимов скроллом включено (равносильно отсутствию мода)
+
+    если данный файл(gui/noscroll.xml) отсутствует - равносильно "<noscroll>False</noscroll>"
+    -->
+
+    <noscroll>True</noscroll>
+
+    <!--
+    "True" - при включении снайперского режима устаналивается кратность зума
+    указанная первым значением <zooms></zooms>
+    в gui/avatar_input_handler.xml или при использовании zoomX4-мода в gui/zoomX4.xml
+
+    "False" - отключает модификацию
+
+    если данный файл(gui/noscroll.xml) отсутствует - равносильно "<defzoom>False</defzoom>"
+    -->
+
+    <defzoom>True</defzoom>
+
+</noscroll.xml>
