@@ -11,13 +11,17 @@ INSTALLATION
 1. Just download the ZIP
 2. Unzip it into your WoT folder (if it's not C:\Games\World_of_Tanks you need to change the JSGME.ini)
 3. Change path in JSGME.ini
+
+!!!! The manager will not detect already installed mods,
+!!!! so your res_mods/ folder needs to have just the empty 0.8.6 folder inside, 
+!!!! everything else needs to be moved to some backup location or removed
+
 4. Launch the JSGME
 5. There is a profile included (furs.mep), you can load it from "Tasks..."
 6. Program support multiple uploads (Ctrl+click and press the arrow)
 
 TROUBLESHOOTING
 ===============
-
 If you are qsf-x or qsf member send me a pm on the forum or ingame.
 
 REMARKS
