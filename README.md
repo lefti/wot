@@ -17,8 +17,10 @@ INSTALLATION
 !!!! everything else needs to be moved to some backup location or removed
 
 4. Launch the JSGME
-5. There is a profile included (furs.mep), you can load it from "Tasks..."
-6. Program support multiple uploads (Ctrl+click and press the arrow)
+5. There is a profile included (furs.mep), you can load it from "Tasks...", it will install all my mods (its most of them)
+
+
+Program supports multiple uploads (Ctrl+click and press the arrow)
 
 TROUBLESHOOTING
 ===============
