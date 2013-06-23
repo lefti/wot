@@ -1,12 +1,27 @@
-wot
-===
+QSF-X
+======
 
 This a basic setup with Jonas's Generic Mod Enabler.
 All mods have been tested with 0.8.6 version
 The pack has been tested for viruses.
 
-There is a JSGME.ini which has a property for the main folder,
-you might need to change this.
+INSTALLATION
+============
+
+1. Just download the ZIP
+2. Unzip it into your WoT folder (if it's not C:\Games\World_of_Tanks you need to change the JSGME.ini)
+3. Change path in JSGME.ini
+4. Launch the JSGME
+5. There is a profile included (furs.mep), you can load it from "Tasks..."
+6. Program support multiple uploads (Ctrl+click and press the arrow)
+
+TROUBLESHOOTING
+===============
+
+If you are qsf-x or qsf member send me a pm on the forum or ingame.
+
+REMARKS
+===============
 
 To install/uninstall a mod just press the arrow in the correct direction.
 
