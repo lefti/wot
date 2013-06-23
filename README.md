@@ -9,7 +9,7 @@ INSTALLATION
 ============
 
 1. Just download the ZIP
-2. Unzip it into your WoT folder (if it's not C:\Games\World_of_Tanks you need to change the JSGME.ini)
+2. Unzip it into your WoT folder, you will need to take it out of the wot-master folder, (if it's not C:\Games\World_of_Tanks you need to change the JSGME.ini)
 3. Change path in JSGME.ini
 
 !!!! The manager will not detect already installed mods,
