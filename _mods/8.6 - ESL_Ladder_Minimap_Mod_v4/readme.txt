@@ -1,0 +1,1 @@
+Install: x:/Games/World_of_Tanks/res_mods/version/

@@ -1,1 +1,0 @@
-http://drongo-lab.ru/0-8-40-8-5-info-panel-0-8-4-2-informacionnaya-panel-vybrannoj-celi-updated-15-04-2013/
